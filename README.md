@@ -1,4 +1,4 @@
-<span style="font-size:5em;">Samuel Yuan</span>
+<span style="font-size:20em;">**Samuel Yuan**</span>
 
 **Preprints**
 
