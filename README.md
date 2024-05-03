@@ -1,5 +1,3 @@
-<span style="font-size:300%;">**Samuel Yuan**</span>
-
 **Preprints**
 
 - **SuperDiff: Diffusion Models for Conditional Generation of Hypothetical New Families of Superconductors**  
