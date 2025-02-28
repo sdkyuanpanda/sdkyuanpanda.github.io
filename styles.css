@@ -1,28 +1,10 @@
-/* Fonts */
-
-/* Sans-Serif Figtree */
-
-@font-face {
-    font-family: "Figtree";
-    src: url("fonts/figtree/Figtree-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 300 900; /* This specifies the available weight range from Light (300) to Black (900) */
-    font-style: normal;
-}
-@font-face {
-    font-family: "Figtree";
-    src: url("fonts/figtree/Figtree-Italic-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 300 900;
-    font-style: italic;
-}
-
-/* Sans-Serif Inter */
-
 @font-face {
     font-family: "Inter";
     src: url("fonts/inter/InterVariable.ttf") format("truetype-variations");
     font-weight: 300 900; /* This specifies the available weight range from Light (300) to Black (900) */
     font-style: normal;
 }
+
 @font-face {
     font-family: "Inter";
     src: url("fonts/inter/InterVariable-Italic.ttf") format("truetype-variations");
@@ -30,83 +12,66 @@
     font-style: italic;
 }
 
-/* Serif EB Garamond */
-
-@font-face {
-    font-family: "EBGaramond";
-    src: url("fonts/eb_garamond/EBGaramond-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 400 800; 
-    font-style: normal;
-}
-@font-face {
-    font-family: "EBGaramond";
-    src: url("fonts/eb_garamond/EBGaramond-Italic-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 400 800;
-    font-style: italic;
+html {
+    background-color: #888888;
 }
 
-/*
+body {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    font-family: Inter, Helvetica, Arial sans-serif;
+    max-width: 1100px
+}
 
-.light-text { font-weight: 300; }
-.regular-text { font-weight: 400; }
-.medium-text { font-weight: 500; }
-.semibold-text { font-weight: 600; }
-.bold-text { font-weight: 700; }
-.extrabold-text { font-weight: 800; }
-.black-text { font-weight: 900; }
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 12 equal columns */
+    grid-gap: 50px; /* spacing between grid items */
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-*/
-
-
-/* Navigation Bar */
-.navbar {
-    background-color: #f3f3f3;
-    width: calc(50em - 3em); /* Exact width: max-width minus body padding */
-    height: 45px;
-    padding: 5px 0;
+.title {
+    grid-column: span 4;
+    min-height: 300px;
+    position: relative;
     display: flex;
     align-items: center;
-    top: 0;
-    justify-content: space-between;
-    z-index: 1000;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
 }
 
-.navbar-content {
+.header-svg {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 2px;
+}
+
+.menu {
+    grid-column: span 2;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px; /* Move padding here */
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 300px;
 }
 
-.nav-title {
-    font-family: Figtree, sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #000000; /* Black text */
-    margin: 0;
+.menu div {
+    margin-bottom: 9px;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px; /* Spacing between links */
+.menu div:last-child {
+    margin-bottom: 30px;
 }
 
 .nav-link {
+    font-size: 1.3em;
+    font-weight: 450;
     text-decoration: none;
-    font-family: Figtree, sans-serif;
-    font-size: 0.85em;
-    font-weight: 600;
-    color: #000000; /* Black text */
+    color: #b2b2b2;
     transition: color 0.2s ease;
     position: relative;
 }
 
-/* Underline animation */
 .nav-link::before {
     content: "";
     position: absolute;
@@ -119,220 +84,62 @@
 }
 
 .nav-link:hover {
-    color: #005A92; /* Hover effect */
+    color: #005A92;
 }
 
 .nav-link:hover::before {
     width: 100%;
 }
 
-
-/* Style */
-body {
-    margin: 0 auto; /* Center the page horizontally by keeping left/right margins and removing top/bottom */
-    max-width: 50em; /* Narrower page width */
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    color: #000000;
-    padding: 0 1.5em; /* Maintain left/right padding, remove top/bottom */
-    box-sizing: border-box;
-    background-color: #f9f9f9; /* Page background color */
-    padding-top: 45px;
+.projects {
+    grid-column: span 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
 }
 
-/* Banner presets */
-.banner_1 {
-    margin: 0; /* Remove any gaps between navbar and banner */
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner_1 img {
-    width: 100%;
-    height: 200px; /* Adjust this value to control banner height */
-    object-fit: cover;
-    object-position: center 74.7%;
-}
-
-.banner_2 {
-    margin: 0; /* Remove any gaps between navbar and banner */
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner_2 img {
-    width: 100%;
-    height: 200px; /* Adjust this value to control banner height */
-    object-fit: cover;
-    object-position: center 25%;
-}
-
-.centered-image {
-    width: 90%; /* Set the image width to 80% of the text container */
-    max-width: 90%; /* Prevent the image from exceeding the specified width */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure the image behaves as a block-level element */
-    border-radius: 20px; /* Add rounded corners */
-    /* border: 1px solid black; Add a black border with a thickness of 2px */
-}
-
-
-
-
-footer {
-    background-color: #f3f3f3; /* Same as navbar */
-    width: 100%;
-    padding: 15px 20px;
-    text-align: left;
-    font-family: Inter, sans-serif;
-    font-size: 1em;
-    color: #000000; /* Dark text for footer */
-    box-sizing: border-box;
-}
-
-
-
-p {
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 12pt;
-}
-
-.footer_regular {
-    line-height: 1.2;
-    font-size: 0.85em;
-    font-weight: 400;
-}
-
-.footer_bold {
-    line-height: 1.2;
-    font-size: 0.85em;
-    font-weight: 600;
-}
-
-.bottom_extra_space {
-    margin-bottom: 2em;
- }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    margin: 0.2em 0;
-}
-h1 {
-    margin-bottom: 0.5em; /* Reduced space after h1 */
-}
-h2 {
-    font-size: 16pt;
-    margin-bottom: -0.35em;
-}
-h6 {
-    font-size: 10pt;
+.subtitle-link {
+    font-size: 1.5em;
     font-weight: 500;
-    margin-top: 0.55em;
-    margin-bottom: -0.5em;
-    color: #005A92;
-}
-/* Style for all links to remove underlines */
-a {
     text-decoration: none;
-}
-
-/* li::marker {
-    color: #005A92;
-} */
-
-/* Button styling */
-.nav-button {
-    background-color: #000000;
-    border: none;
-    padding: 10px 20px;
-    margin-right: 7px;
-    margin-bottom: 10px;  /* Add spacing between rows */
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: Inter, sans-serif;
-    font-weight: 600;
-    transition: all 0.3s;
-    display: inline-block;  /* This ensures proper spacing */
-    color: #ffffff;  /* Add text color to ensure visibility */
-}
-
-.nav-button:hover {
-    background-color: #525252;
-    transform: translateY(-2px);
-}
-
-
-
-.inline-link {
-    position: relative;
     color: #000000;
-    text-decoration: none; /* We will create the custom underline */
-    transition: color 0.1s ease;
-}
-
-.inline-link::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%; /* Full width by default */
-    height: 1px; /* Default thickness of the underline */
-    background-color: #005A92;
-    transition: height 0.1s ease;
-}
-
-.inline-link:hover {
-    color: #005A92; /* Change text color to red on hover */
-}
-
-.inline-link:hover::after {
-    height: 2px; 
-}
-
-
-.inline-link-pure-url {
-    text-decoration: underline;
-    text-decoration-color: #002896;
-    color: #002896;
-    transition: text-decoration-thickness 0.1s ease;
-    text-decoration-thickness: 1px; /* Set the default underline thickness */
-}
-
-.inline-link-pure-url:hover {
-    text-decoration-thickness: 3px; /* Thicken underline to 3px on hover */
-}
-
-/* old version */
-/*
-.inline-link-pure-url {
-    text-decoration: none;
-    color: #002896;
-    font-weight: 600;
+    transition: color 0.2s ease;
     position: relative;
 }
-*/
 
-/* Underline animation */
-/*
-.inline-link-pure-url::before {
+.subtitle-link::before {
     content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 0;
     height: 1px;
-    background-color: #002896;
-    transition: width 0.3s ease;
+    background-color: #005A92;
+    transition: width 0.2s ease;
 }
 
-.inline-link-pure-url:hover::before {
+.subtitle-link:hover {
+    color: #005A92;
+}
+
+.subtitle-link:hover::before {
     width: 100%;
 }
-*/
 
-/* Style for arrow links in publications */
+.project-breadcrumb-header {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.project-breadcrumb-content {
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
 .arrow-link {
     text-decoration: none;
     margin-right: 7px;
@@ -346,13 +153,12 @@ a {
     content: "";
     margin-left: 2px;
     display: inline-block;
-    width: 12px; /* Adjust width */
-    height: 12px; /* Adjust height */
+    width: 12px;
+    height: 12px;
     background: url('assets/arrow_link_icon.svg') no-repeat center center;
-    background-size: contain; /* Ensure the SVG scales nicely */
+    background-size: contain;
 }
 
-/* Underline animation */
 .arrow-link::before {
     content: "";
     position: absolute;
@@ -372,58 +178,35 @@ a {
     width: 100%;
 }
 
-/* Change arrow icon on hover */
 .arrow-link:hover::after {
     background: url('assets/arrow_link_icon_blue.svg') no-repeat center center;
-    background-size: contain; /* Ensure the SVG scales nicely */
+    background-size: contain;
 }
 
-/* Add spacing between publication entries */
-.publications li {
-    margin-bottom: 2em;
+.publications {
+    grid-column: span 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
 }
 
-/* Add spacing between elements within each publication */
-.publications li div {
-    margin-bottom: 0.5em;
+.about {
+    grid-column: span 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
 }
 
-
-.in-paragraph-publications {
-    margin: 1em 0;
+.about-text {
+    font-size: 1.45em;
+    line-height: 1.45;
+    font-weight: 500;
 }
 
-.in-paragraph-publications p {
-    margin: 0;
-}
-
-.project-listing {
-    margin: 1.5em 0;
-}
-
-
-
-/* Bold and red numbers in the ordered list */
-ol {
-    counter-reset: section; /* Reset counter for the list */
-    list-style: none; /* Remove default list styling */
-    padding-left: 0; /* Remove default padding */
-}
-
-ol li {
-    margin-bottom: 1rem; /* Add spacing between list items */
-    font-size: 1rem;
-}
-
-ol li::before {
-    counter-increment: section; /* Increment counter for each item */
-    content: counter(section) ". "; /* Add counter (number) */
-    color: #005A92; /* Red color for the number */
-    font-weight: 600; /* Bold numbers */
-}
-
-/* Smooth scrolling for anchor links */
-html {
-    scroll-behavior: smooth;
+.footer {
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
