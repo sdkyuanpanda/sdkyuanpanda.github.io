@@ -15,6 +15,21 @@
     font-style: italic;
 }
 
+/* Sans-Serif Inter */
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/inter/InterVariable.ttf") format("truetype-variations");
+    font-weight: 300 900; /* This specifies the available weight range from Light (300) to Black (900) */
+    font-style: normal;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/inter/InterVariable-Italic.ttf") format("truetype-variations");
+    font-weight: 300 900;
+    font-style: italic;
+}
+
 /* Serif EB Garamond */
 
 @font-face {
@@ -116,8 +131,8 @@
 body {
     margin: 0 auto; /* Center the page horizontally by keeping left/right margins and removing top/bottom */
     max-width: 50em; /* Narrower page width */
-    font-family: Figtree, sans-serif;
-    font-weight: 500;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
     color: #000000;
     padding: 0 1.5em; /* Maintain left/right padding, remove top/bottom */
     box-sizing: border-box;
@@ -169,7 +184,7 @@ footer {
     width: 100%;
     padding: 15px 20px;
     text-align: left;
-    font-family: Figtree, sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 1em;
     color: #000000; /* Dark text for footer */
     box-sizing: border-box;
@@ -179,7 +194,7 @@ footer {
 
 p {
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12pt;
 }
 
@@ -200,7 +215,7 @@ p {
  }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Figtree, sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 700;
     margin: 0.2em 0;
 }
@@ -236,7 +251,7 @@ a {
     margin-bottom: 10px;  /* Add spacing between rows */
     border-radius: 20px;
     cursor: pointer;
-    font-family: Figtree, sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 600;
     transition: all 0.3s;
     display: inline-block;  /* This ensures proper spacing */
