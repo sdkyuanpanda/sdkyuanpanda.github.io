@@ -13,13 +13,13 @@
 }
 
 html {
-    background-color: #888888;
+    background-color: #dddddd;
 }
 
 body {
     margin: 0 auto;
     padding: 50px;
-    background-color: #f9f9f9;
+    background-color: #f1f5ff;
     font-family: Inter, Helvetica, Arial sans-serif;
     max-width: 1100px
 }
@@ -96,7 +96,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 1000px;
 }
 
 .subtitle-link {
@@ -137,29 +137,31 @@ body {
     font-size: 1em;
     line-height: 1.5;
     font-weight: 400;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 }
 
-.arrow-link {
+.arrow-link-project-breadcrumb {
+    font-size: 0.9em;
     text-decoration: none;
     margin-right: 7px;
-    color: #000000;
+    margin-bottom: 2.5em;
+    color: #005A92;
     display: inline-flex;
     align-items: center;
     position: relative;
 }
 
-.arrow-link::after {
+.arrow-link-project-breadcrumb::after {
     content: "";
     margin-left: 2px;
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: url('assets/arrow_link_icon.svg') no-repeat center center;
+    background: url('assets/arrow_link_icon_blue.svg') no-repeat center center;
     background-size: contain;
 }
 
-.arrow-link::before {
+.arrow-link-project-breadcrumb::before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -170,17 +172,8 @@ body {
     transition: width 0.3s ease;
 }
 
-.arrow-link:hover {
-    color: #005A92;
-}
-
-.arrow-link:hover::before {
+.arrow-link-project-breadcrumb:hover::before {
     width: 100%;
-}
-
-.arrow-link:hover::after {
-    background: url('assets/arrow_link_icon_blue.svg') no-repeat center center;
-    background-size: contain;
 }
 
 .publications {
@@ -188,7 +181,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 1000px;
 }
 
 .about {
@@ -196,7 +189,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 1000px;
 }
 
 .about-text {
