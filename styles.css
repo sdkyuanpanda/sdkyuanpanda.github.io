@@ -453,7 +453,7 @@ body {
 
 .equal-contrib-note-pub-page-theme {
     font-size: 0.8em;
-    color: #000000;
+    color: #ff1423;
     font-weight: 500;
 }
 
@@ -610,7 +610,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 1000px;
+    height: 650px;
 }
 
 .publications-page-item {
