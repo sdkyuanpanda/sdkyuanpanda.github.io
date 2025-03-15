@@ -610,7 +610,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 5000px;
+    height: 1000px;
 }
 
 .publications-page-item {
