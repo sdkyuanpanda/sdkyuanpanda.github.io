@@ -194,7 +194,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 680px;
 }
 
 .subtitle-link {
@@ -280,7 +280,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 90px;
+    height: 110px;
 }
 
 .about-text {
