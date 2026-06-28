@@ -2,14 +2,53 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="title" content="Samuel Yuan">
-        <meta name="description" content="My Website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Language" content="en">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Canonical: the MIT site (https://www.mit.edu/~sdkyuan/) is the primary copy of this page -->
+        <link rel="canonical" href="https://www.mit.edu/~sdkyuan/">
+
+        <title>Samuel Yuan</title>
+        <meta name="title" content="Samuel Yuan">
+        <meta name="description" content="Samuel Yuan — CS student at MIT working on local language models and agents, with research in diffusion models for superconductor discovery and asteroid orbit determination.">
+        <meta name="author" content="Samuel Yuan">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Samuel Yuan">
+        <meta property="og:title" content="Samuel Yuan">
+        <meta property="og:description" content="Samuel Yuan — CS student at MIT working on local language models and agents, with research in diffusion models for superconductor discovery and asteroid orbit determination.">
+        <meta property="og:url" content="https://www.mit.edu/~sdkyuan/">
+        <meta property="og:image" content="https://www.mit.edu/~sdkyuan/assets/blue-circle.svg">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Samuel Yuan">
+        <meta name="twitter:description" content="Samuel Yuan — CS student at MIT working on local language models and agents, with research in diffusion models for superconductor discovery and asteroid orbit determination.">
+        <meta name="twitter:image" content="https://www.mit.edu/~sdkyuan/assets/blue-circle.svg">
+
         <link rel="icon" href="assets/favicon.ico">
         <link rel="stylesheet" href="styles.css">
-        <title>Samuel Yuan</title>
+
+        <!-- Structured data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Samuel Yuan",
+          "url": "https://www.mit.edu/~sdkyuan/",
+          "image": "https://www.mit.edu/~sdkyuan/assets/blue-circle.svg",
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "Massachusetts Institute of Technology"
+          },
+          "sameAs": [
+            "https://scholar.google.com/citations?user=8RGyM2cAAAAJ&hl=en",
+            "https://github.com/sdkyuanpanda"
+          ]
+        }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -23,15 +62,16 @@
                 <div><a href="projects.html" class="nav-link">Projects</a></div>
                 <div><a href="publications.html" class="nav-link">Publications</a></div>
                 <!-- <div><a href="https://thypher.com/" target="_blank" class="nav-link">Thypher!</a></div> -->
-                <div><a href="photos.html" class="nav-link">Photos</a></div>
+                <div><a href="photos.html" class="nav-link">Photography</a></div>
                 <div><a href="https://scholar.google.com/citations?user=8RGyM2cAAAAJ&hl=en" target="_blank" class="nav-link">Google Scholar</a></div>
                 <div><a href="https://github.com/sdkyuanpanda" target="_blank" class="nav-link">GitHub</a></div>
+                <div><a href="https://wavecat.ai" target="_blank" class="nav-link">wavecat</a></div>
             </div>
             
             <div class="about">
                 <div>
-                    <div class="about-text">I'm from Sunnyvale, CA — this fall, I'll be a sophomore at MIT majoring in CS.</div>
-                    <div class="about-text-subtitle">Lately, I've enjoyed working on local LMs and agents. I also like writing, chess, and Minecraft. My favorite animal is the panda!</div>
+                    <div class="about-text">I'm from Sunnyvale, CA — I'm a rising sophomore at MIT studying CS.</div>
+                    <div class="about-text-subtitle">Lately, I've enjoyed working on local LMs and agents. I also like writing, chess, and Minecraft. My favorite animal is the panda.</div>
                 </div>
 
                 <div style="margin-top: 55px;"></div>
@@ -67,6 +107,10 @@
             <div class="projects">
                 <div style="margin-bottom: 2.7em;"><a href="projects.html" class="subtitle-link">Projects</a></div>
                 <div>
+                    <div class="project-breadcrumb-header">wavecat</div>
+                    <div class="project-breadcrumb-content">wavecat is a fully local personal agent that watches your screen. By viewing your activity, it develops a rich understanding of you. Entirely on device for privacy.</div>
+                    <div><a href="https://wavecat.ai" target="_blank" class="arrow-link-project-breadcrumb">Learn More</a></div>
+
                     <div class="project-breadcrumb-header">Superconductor Discovery</div>
                     <div class="project-breadcrumb-content">I've worked on applying diffusion models for superconductor discovery and getting deep learning models to explore out-of-distribution.</div>
                     <div><a href="projects.html#superdiff" class="arrow-link-project-breadcrumb">Learn More</a></div>
@@ -87,7 +131,7 @@
 
             <div class="footer">
                 <div class="footer-contact-info">If you have questions about my work or if you'd just like to talk, please feel free to reach out at: sdkyuan [at] mit [dot] edu</div>
-                <div class="copyright-info">&copy 2026 Samuel Yuan. (Last Updated: June 10, 2026)</div>
+                <div class="copyright-info">&copy 2026 Samuel Yuan. (Last Updated: June 28, 2026)</div>
             </div>
         </div>
     </body>

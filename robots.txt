@@ -1,0 +1,6 @@
+# Crawling is allowed so search engines can read the rel="canonical" tags,
+# which point every page to the primary copy at https://www.mit.edu/~sdkyuan/
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mit.edu/~sdkyuan/sitemap.xml

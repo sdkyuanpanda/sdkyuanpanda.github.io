@@ -2,14 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="title" content="Samuel Yuan">
-        <meta name="description" content="My Website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Language" content="en">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Canonical: the MIT site (https://www.mit.edu/~sdkyuan/) is the primary copy of this page -->
+        <link rel="canonical" href="https://www.mit.edu/~sdkyuan/projects.html">
+
+        <title>Projects — Samuel Yuan</title>
+        <meta name="title" content="Projects — Samuel Yuan">
+        <meta name="description" content="Projects by Samuel Yuan, including wavecat, superconductor discovery with diffusion models, asteroid orbit determination, thypher.com, and firebreak optimization.">
+        <meta name="author" content="Samuel Yuan">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Samuel Yuan">
+        <meta property="og:title" content="Projects — Samuel Yuan">
+        <meta property="og:description" content="Projects by Samuel Yuan, including wavecat, superconductor discovery with diffusion models, asteroid orbit determination, thypher.com, and firebreak optimization.">
+        <meta property="og:url" content="https://www.mit.edu/~sdkyuan/projects.html">
+        <meta property="og:image" content="https://www.mit.edu/~sdkyuan/assets/blue-circle.svg">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Projects — Samuel Yuan">
+        <meta name="twitter:description" content="Projects by Samuel Yuan, including wavecat, superconductor discovery with diffusion models, asteroid orbit determination, thypher.com, and firebreak optimization.">
+        <meta name="twitter:image" content="https://www.mit.edu/~sdkyuan/assets/blue-circle.svg">
+
         <link rel="icon" href="assets/favicon.ico">
         <link rel="stylesheet" href="styles.css">
-        <title>Samuel Yuan</title>
     </head>
     <body class="projects-body">
         <div class="container">
@@ -22,11 +42,25 @@
             <div class="menu">
                 <div><a href="index.html" class="nav-link-project">Home</a></div>
                 <div><a href="publications.html" class="nav-link-project">Publications</a></div>
-                <div><a href="photos.html" class="nav-link-project">Photos</a></div>
+                <div><a href="photos.html" class="nav-link-project">Photography</a></div>
                 <div><a href="https://scholar.google.com/citations?user=8RGyM2cAAAAJ&hl=en" target="_blank" class="nav-link-project">Google Scholar</a></div>
                 <div><a href="https://github.com/sdkyuanpanda" target="_blank" class="nav-link-project">GitHub</a></div>
+                <div><a href="https://wavecat.ai" target="_blank" class="nav-link-project">wavecat</a></div>
             </div>
             <div class="project-page-item">
+                <div id="wavecat" style="margin-bottom: 2.5em;">
+                    <div style="margin-bottom: 1em;" class="project-subtitle"><a href="https://wavecat.ai" target="_blank" class="subtitle-link-project">wavecat</a></div>
+
+                    <div class="project-item-content" style="margin-bottom: 1.5em;">wavecat is a fully local personal agent that watches your screen. It develops a rich understanding of you and your needs by constantly viewing your activity. Don't worry, privacy is guaranteed since all models run locally on your device. So no data centers are needed and none of your personal data ever leaves your computer or gets sent to the cloud. You can install it and learn more at <a href="https://wavecat.ai" target="_blank" class="inline-link-project">wavecat.ai</a>.</div>
+
+                    <img src="assets/new-super-cool-graphic.svg"
+                        alt="wavecat"
+                        class="centered-image"
+                        style="width: 75%;">
+
+                    <div class="project-item-content" style="margin-top: 1.5em;">I've been running local LMs for a while, and I thought that this would be a cool way to show that it's much more than just a gimmick. There's useful things that you can do locally that you just can't or don't wanna do on a cloud setup. I hope the future of personal AI is local. It just makes sense since the context is already there, it's free, and it ensures privacy and soverignty. And this project was a great way to learn a lot about local inference engines, models, speculative decoding, constrained decoding via grammar, RLM/ReAct/CodeAct agent routines, and many other technical things.</div>
+                </div>
+
                 <div id="superdiff" style="margin-bottom: 2.5em;">
                     <div style="margin-bottom: 1em;" class="project-subtitle">Superconductor Discovery</div>
                     <div class="project-item-content" style="margin-bottom: 1.5em;">In this project, I applied diffusion models — a type of generative AI model that is behind popular image generators such as Dall-E 2 and Stable Diffusion — for superconductor discovery. Specifically, this work focused on applying conditional diffusion models (with <a href="https://arxiv.org/abs/2108.02938" target="_blank" class="inline-link-project">ILVR</a>) to computationally discovery potential <b>new families</b> of superconductors for the first time. In the past, computational approaches to superconductor discovery could only generate new superconductors from known families and were unable to generate any new families. This work resolved that limitation.</div>
@@ -107,10 +141,11 @@
                 </div>
             </div>
             <div class="project-page-table-of-contents">
-                <div style="font-size: 1.3em; font-weight: 500; line-height: 1.5; margin-bottom: 1.7em;">I've worked on a couple projects in the past — most of them have to do with AI, physics, or both. Here's a brief overview of them.</div>
+                <div style="font-size: 1.3em; font-weight: 500; line-height: 1.5; margin-bottom: 1.7em;">Here are some of the projects I've worked on. Recently, I've been enjoying local LMs and agent systems.</div>
                 <div>
                     <p style="color: #FF8800; font-weight: 700; margin-top: 1em; margin-bottom: -0.5em">Contents:</p>
                     <ol class="ol-project">
+                        <li><a href="#wavecat" class="inline-link-project">wavecat</a></li>
                         <li><a href="#superdiff" class="inline-link-project">Superconductor Discovery</a></li>
                         <li><a href="#asteroid" class="inline-link-project">Asteroid Orbit Determination</a></li>
                         <li><a href="#thypher" class="inline-link-project">thypher.com</a></li>
